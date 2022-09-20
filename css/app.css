@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    max-width: 1280px;
+    margin:0 auto;
+    padding-bottom: 100px;
+}
+.navPrincipal{ /*color celeste del banner*/
+    width: 100%;
+    height: 60px;
+    background: rgb(143, 165, 200);
+}
+.navPrincipal ul{ /*ubicacion del banner*/
+    float: left;
+    margin: 0;
+    
+}
+.navPrincipal ul li{ /*banner config*/
+    display: inline-block;
+    list-style: none;
+}
+.navPrincipal ul li a{/*banner config texto*/
+    color:#fff;
+    font-family:'Oswald', sans-serif;
+    text-decoration:dotted;
+    font-size: 25px;
+    display: block;
+    padding: 15px 70px;
+}
+.navPrincipal ul li a:hover{/*gato en texto mouse*/
+    background:url('../img/gatofondo.png') no-repeat center;
+    background-size: 65px;
+}
+.navPrincipal .logoNav{
+    position: absolute;
+    right: 0.2%;
+}
+
+
+    /*HOME*/
+
+/* banner*/
+.carousel {
+    text-align: center;
+}
+.carousel li{
+    list-style: none;
+}
+
+/* compoment de destaques*/
+.destaque{
+    position: relative;
+    display: inline-block;
+    width: 340px;
+    height: 390px;
+    background-color: #dedcda;
+    text-align: center;
+            /*tamanho, tipo, cor*/
+    border:1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.8);
+    margin:0 40px;
+}
+.destaque .imagem{
+    width: 100%;
+    height: 200px;
+    background-size: 100%;
+    background-position: center;
+}
+
+.destaque h2{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    color:rgb(9, 9, 136);
+}
+.destaque .valor{ /*valor naranja*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    color:orange;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.destaque .valor.riscado{
+    font-size: 12px;
+    color:red;
+    display: block;
+    text-decoration: line-through;
+    padding-bottom: 0px;
+}
+.destaque .valor small{
+    color:black;
+}
+.destaque .adicionaCarrinho{
+    display: block;
+    position: absolute;
+    width: 320px;
+    padding: 6px 0;
+    background:#F0A952;
+    left:10px;
+    bottom: 10px;
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition:all 0.5s;
+}
+.destaque .adicionaCarrinho:hover{ /*pasar el mouse encima del boton de compra*/
+    background:red;
+    color:#F0A952;
+    transition:all 0.5s;
+}
+
+
+                                /*footer*/
+.rodape{
+    width:100%;
+    background: #F0A952;
+    position: fixed;
+    bottom: 0;
+    padding:5px 0;
+}
+.rodape .copy{                  /*margen izquierdo y derecho*/
+    padding-left: 15px;
+}
+.rodape a{                      /*margen izquierdo y derecho*/
+    float: right;
+    padding-right: 15px;
+}
+.rodape .copy, .rodape a{       /*texto del footer*/
+    font-size: 13px;
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
